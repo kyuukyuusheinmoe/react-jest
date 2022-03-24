@@ -30,7 +30,7 @@ const AppFunction = () => {
       >
         <TestHookContext />
       </Context.Provider>
-      <TestAxios url="https://jsonplaceholder.typicode.com/posts/1" />
+      {/* <TestAxios url="https://jsonplaceholder.typicode.com/posts/1" /> */}
     </div>
   );
 };
