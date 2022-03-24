@@ -4,13 +4,12 @@ import Account from "./Account";
 import App from "./App";
 import toJson from "enzyme-to-json";
 
-it("renders correctly", () => {
-  const wrapper = mount(<App />);
-  expect(wrapper.state("error")).toEqual(null);
-});
+// it("renders correctly", () => {
+//   const wrapper = mount(<App />);
+//   expect(wrapper.state("error")).toEqual(null);
+// });
 
-/*
- it("renders without crashing", () => {
+it("renders without crashing", () => {
   shallow(<App />);
 });
 
@@ -19,9 +18,8 @@ it("renders Account header", () => {
   const header = <h1>Display Active Users Account Details</h1>;
   // expect(wrapper.contains(welcome)).toBe(true);
   expect(wrapper.contains(header)).toEqual(true);
-}); */
+});
 
-/*
 const user = {
   name: "Adeneye David",
   email: "david@gmail.com",
@@ -41,6 +39,7 @@ describe("<Account />", () => {
   });
 });
 
+/*
  it("renders welcome message", () => {
   const wrapper = shallow(<App />);
   const welcome = <h2>Welcome to React Testing</h2>;
@@ -49,12 +48,11 @@ describe("<Account />", () => {
 });
  */
 
-/* it("renders without crashing", () => {
+it("renders without crashing", () => {
   const mockColor = "David";
   const wrapper = shallow(<App color={mockColor} />);
   expect(toJson(wrapper)).toMatchSnapshot();
 });
- */
 
 /* it("correctly increment the counter", () => {
   const mockColor = "david";
